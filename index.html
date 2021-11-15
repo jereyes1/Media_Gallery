@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <nav class="topnav" id="main-nav">
+      <a href="#" class="nav-links">Home</a>
+      <a href="#" class="nav-links">Upload</a>
+      <a href="#" class="nav-links">Info</a>
+      <a href="#" class="nav-links">Credits</a>
+      <a href="#" class="nav-links">More</a>
+      <a href="javascript:void(0);" class="nav-link trigram" onclick="navToggle()">&#9776;</a>
+    </nav>
+    <div class="container">
+      <div class="mySlides">
+        <div class="numbertext">1 / 6</div>
+        <img src="img/mountain.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">2 / 6</div>
+        <img src="img/purpleSunset.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">3 / 6</div>
+        <img src="img/sunset.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">4 / 6</div>
+        <img src="img/water.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">5 / 6</div>
+        <img src="img/img_nature_wide.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">6 / 6</div>
+        <img src="img/img_lights_wide.jpg" style="width:100%">
+      </div>
+
+      <a class="prev" onclick="plusSlides(-1)">❮</a>
+      <a class="next" onclick="plusSlides(1)">❯</a>
+
+      <div class="caption-container">
+        <p id="captionOne"></p>
+      </div>
+
+      <div class="row">
+        <div class="column">
+          <img class="demo cursor" src="img/mountain.jpg" style="width:100%" onclick="currentSlide(1)" alt="The Mountain">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="img/purpleSunset.jpg" style="width:100%" onclick="currentSlide(2)" alt="Purple Sunset">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="img/sunset.jpg" style="width:100%" onclick="currentSlide(3)" alt="Orange Sunset">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="img/water.jpg" style="width:100%" onclick="currentSlide(4)" alt="Lake">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="img/img_nature_wide.jpg" style="width:100%" onclick="currentSlide(5)" alt="Nature and Sunrise">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="img/img_lights_wide.jpg" style="width:100%" onclick="currentSlide(6)" alt="Northern Lights">
+        </div>
+      </div>
+    </div>
+
+
+
+    <article class="grid-container">
+
+      <div class="card one">
+        <div class="thumb"></div><hr>
+        <div class="card-content">
+          <h3>Purple Reflection</h3>
+          <p>Water reflection of the sky with a purple and orange scheme.</p>
+          <button class="modal-button" href="#myModal1">More</button>
+          <div id="myModal1" class="modal">
+            <div class="modal-content">
+              <span class="close">&times</span>
+              <div class="modal-body">
+                <img src="img/reflection.jpg" alt="purple reflection" style="width:100%;max-width:300px;">
+                <p>This is water reflection of the sky with a tint of purple.</p>
+              </div>
+            </div>
+          </div>
+        </div><!--end .content-->
+      </div><!--end .card-->
+
+      <div class="card two">
+        <div class="thumb"></div><hr>
+        <div class="card-content">
+          <h3>Coffee Cup</h3>
+          <p>Here is picture of the grand coffee cup.</p>
+          <button class="modal-button" href="#myModal2">More</button>
+          <div id="myModal2" class="modal">
+            <div class="modal-content">
+              <span class="close">&times</span>
+              <div class="modal-body">
+                <img src="img/coffee.jpg" alt="coffee" style="width:100%;max-width:300px;">
+                <p>This is coffee.</p>
+              </div>
+            </div>
+          </div>
+        </div><!--end .content-->
+      </div><!--end .card-->
+
+      <div class="card three">
+        <div class="thumb"></div><hr>
+        <div class="card-content">
+          <h3>Coffee Cup</h3>
+          <p>Here is picture of the grand coffee cup.</p>
+          <button class="modal-button" href="#myModal3">More</button>
+          <div id="myModal3" class="modal">
+            <div class="modal-content">
+              <span class="close">&times</span>
+              <div class="modal-body">
+                <img src="img/coffee.jpg" alt="coffee" style="width:100%;max-width:300px;">
+                <p>This is coffee.</p>
+              </div>
+            </div>
+          </div>
+        </div><!--end .content-->
+      </div><!--end .card-->
+
+      <div class="card four">
+        <div class="thumb"></div><hr>
+        <div class="card-content">
+          <h3>Coffee Cup</h3>
+          <p>Here is picture of the grand coffee cup.</p>
+          <button class="modal-button" href="#myModal4">More</button>
+          <div id="myModal4" class="modal">
+            <div class="modal-content">
+              <span class="close">&times</span>
+              <div class="modal-body">
+                <img src="img/coffee.jpg" alt="coffee" style="width:100%;max-width:300px;">
+                <p>This is coffee.</p>
+              </div>
+            </div>
+          </div>
+        </div><!--end .content-->
+      </div><!--end .card-->
+
+
+
+
+    </article>
+    <footer>
+      <p>&copy; 2021, Jennifer Reyes</p>
+    </footer>
+    <script src="js/page.js"></script>
+  </body>
+</html>
