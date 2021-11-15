@@ -1,6 +1,9 @@
 * {
   box-sizing: border-box;
 }
+body {
+  background-color: #3d558a;;
+}
 footer {
   background-color: #333;
   color: #ddd;
@@ -19,13 +22,26 @@ nav {
   nav {flex-direction: row;}
 }
 nav a {
+  position: relative;
   color: #DDD;
   text-decoration: none;
 }
+
+a:hover{
+  color: #f5b1b8;
+  transition: color 250ms ease-in-out;
+  transition-duration: 250ms;
+  transition-timing-function: ease-in-out;
+  transition-delay: 0s;
+}
+
 .trigram {
   font-size: 1.75em;
   display: none;
 }
+
+
+
 @media screen and (max-width: 767px) {
   .topnav a {display: none;}
   .topnav a.trigram {display: inherit; align-self: flex-end;}
@@ -40,7 +56,8 @@ nav a {
 /* Position the image container (needed to position the left and right arrows) */
 .container {
   position: relative;
-
+  background-color: #EEE;
+  /*padding: 1em;*/
 }
 
 /* Hide the images by default */
@@ -123,8 +140,9 @@ nav a {
 
 
 .grid-container {
+  margin-top: 2.5rem;
   display: grid;
-  grid-gap: 1em;
+  grid-gap: 1.5em;
   grid-template-columns: 1fr;
   padding: 0.5em;
 }
@@ -138,13 +156,10 @@ nav a {
   .grid-container {grid-template-columns: repeat(4, 1fr);}
 }
 
-.more {
-  justify-content: center;
-}
-
 .card {
-  border: 1px solid #333;
-  border-radius: 5px;
+  border: 2px solid #333;
+  border-radius: 8px;
+  background-color: #EEE;
 }
 .card-content {
   padding: 1em;
@@ -154,11 +169,9 @@ nav a {
   background-position: center center;
   background-size: 80%;
   background-repeat: no-repeat;
-  border-radius: 4px 4px 0 0;
 }
 .one .thumb {
   background-image: url('../img/reflection.jpg');
-
 }
 .two .thumb {
   background-image: url('../img/coffee.jpg');
@@ -171,6 +184,27 @@ nav a {
   background-image: url('../img/coffee.jpg');
 }
 .five .thumb {
+  background-image: url('../img/coffee.jpg');
+}
+.six .thumb {
+  background-image: url('../img/coffee.jpg');
+}
+.seven .thumb {
+  background-image: url('../img/coffee.jpg');
+}
+.eight .thumb {
+  background-image: url('../img/coffee.jpg');
+}
+.nine .thumb {
+  background-image: url('../img/coffee.jpg');
+}
+.ten .thumb {
+  background-image: url('../img/coffee.jpg');
+}
+.eleven .thumb {
+  background-image: url('../img/coffee.jpg');
+}
+.twelve .thumb {
   background-image: url('../img/coffee.jpg');
 }
 
@@ -200,6 +234,7 @@ nav a {
 }
 
 .modal-body {padding: 2px 16px;}
+
 
 .close {
   color: #aaaaaa;
