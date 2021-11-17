@@ -120,9 +120,8 @@ a:hover{
   display: flex;
   justify-content: center;
 }
-.modal-button {
 
-}
+
 .row:after {
   content: "";
   display: table;
