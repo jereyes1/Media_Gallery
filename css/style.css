@@ -28,7 +28,7 @@ nav a {
 }
 
 a:hover{
-  color: #f5b1b8;
+  color: #58b0e4 ;
   transition: color 250ms ease-in-out;
   transition-duration: 250ms;
   transition-timing-function: ease-in-out;
@@ -115,7 +115,14 @@ a:hover{
   padding: 2px 16px;
   color: white;
 }
+.btn-cont {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.modal-button {
 
+}
 .row:after {
   content: "";
   display: table;
@@ -171,41 +178,41 @@ a:hover{
   background-repeat: no-repeat;
 }
 .one .thumb {
-  background-image: url('../img/reflection.jpg');
+  background-image: url('../img/study.jpg');
 }
 .two .thumb {
-  background-image: url('../img/coffee.jpg');
+  background-image: url('../img/coffee1.jpg');
 }
 
 .three .thumb {
-  background-image: url('../img/coffee.jpg');
+  background-image: url('../img/books.jpg');
 }
 .four .thumb {
-  background-image: url('../img/coffee.jpg');
+  background-image: url('../img/tea.jpg');
 }
 .five .thumb {
-  background-image: url('../img/coffee.jpg');
+  background-image: url('../img/flower.jpg');
 }
 .six .thumb {
-  background-image: url('../img/coffee.jpg');
+  background-image: url('../img/bear.jpg');
 }
 .seven .thumb {
-  background-image: url('../img/coffee.jpg');
+  background-image: url('../img/bird.jpg');
 }
 .eight .thumb {
-  background-image: url('../img/coffee.jpg');
+  background-image: url('../img/cacti.jpg');
 }
 .nine .thumb {
-  background-image: url('../img/coffee.jpg');
+  background-image: url('../img/person.jpg');
 }
 .ten .thumb {
-  background-image: url('../img/coffee.jpg');
+  background-image: url('../img/clutter.jpg');
 }
 .eleven .thumb {
-  background-image: url('../img/coffee.jpg');
+  background-image: url('../img/chair.jpg');
 }
 .twelve .thumb {
-  background-image: url('../img/coffee.jpg');
+  background-image: url('../img/music.jpg');
 }
 
 .modal {
@@ -233,8 +240,15 @@ a:hover{
   max-width: 700px;*/
 }
 
-.modal-body {padding: 2px 16px;}
-
+.modal-body {
+    padding: 2px 16px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2em;
+}
+@media screen and (max-width: 768px) {
+  .modal-body{grid-template-columns: 1fr;}
+}
 
 .close {
   color: #aaaaaa;
